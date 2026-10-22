@@ -16,7 +16,7 @@ In high-growth B2B software companies, silent customer churn and revenue leakage
 
 ---
 
-## 🛠️ The Custom 6-Stage Architecture Blueprint
+##  The Custom 6-Stage Architecture Blueprint
 This project strictly follows a production-grade, multi-tier workflow:
 
 1. **[SQL Database Server (SSMS 22 / `.\SQLEXPRESS`)]:** Ingested 50,000+ raw Kaggle subscription rows into a local relational database instance using Windows Authentication and bulk import wizards, running targeted `SELECT/WHERE` queries to filter out null signups and negative revenue.
@@ -37,7 +37,7 @@ This project strictly follows a production-grade, multi-tier workflow:
 
 ##  Tech Stack & Tool Versions
 * **Database Engine:** SQL Server Management Studio (SSMS 22)
-* **Staging Vault:** Excel 2013 (`.xlsx`)
+* **Staging Vault:** Excel (`.xlsx`)
 * **ETL & Visualization:** Power BI Desktop (Power Query & Interactive Report Canvas)
 * **Engineering Runtime:** Python 3.12, Pandas, NumPy, Jupyter Notebooks (VS Code)
 * **Environment Isolation:** Python `venv` (`env`)
