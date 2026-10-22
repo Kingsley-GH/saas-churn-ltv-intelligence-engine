@@ -5,7 +5,6 @@ An enterprise-grade, end-to-end data pipeline and executive analytics solution d
 ---
 
 ##  Executive Dashboard Preview
-*(Add your saved dashboard preview screenshot as `dashboard_preview.png` inside your subfolder to display your visual canvas here)*
 ![SaaS Executive Dashboard Preview](dashboard_preview.png.png)
 
 ---
