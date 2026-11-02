@@ -19,7 +19,7 @@ In high-growth B2B software companies, silent customer churn and revenue leakage
 This project strictly follows a production-grade, multi-tier workflow:
 
 1. **[SQL Database Server (SSMS 22 / `.\SQLEXPRESS`)]:** Ingested 50,000+ raw Kaggle subscription rows into a local relational database instance using Windows Authentication and bulk import wizards, running targeted `SELECT/WHERE` queries to filter out null signups and negative revenue.
-2. **[Excel 2013 Local Storage Vault (`02_SaaS_Churn_Project`)]:** Staged the extracted dataset as an Excel workbook (`.xlsx`) and enforced formal table boundaries using `Ctrl + T` to lock down data ranges.
+2. **[Excel Local Storage Vault (`02_SaaS_Churn_Project`)]:** Staged the extracted dataset as an Excel workbook (`.xlsx`) and enforced formal table boundaries using `Ctrl + T` to lock down data ranges.
 3. **[Power BI Power Query ETL]:** Performed visual, non-code structural data sanitization—applying **Trim** to remove hidden whitespace, **Capitalize Each Word** to standardize text casing, and **Remove Duplicates** on unique `Customer_ID` primary keys.
 4. **[Python 3.12 / VS Code Engine]:** Activated an isolated virtual environment (`env`) and utilized Pandas and vectorized NumPy logic (`np.select`) inside a Jupyter Notebook to compute advanced features:
    - **License Utilization Rate:** (`Active_Seats_Used` / `Total_Seats_Allowed`)
